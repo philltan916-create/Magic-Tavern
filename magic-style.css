@@ -1,0 +1,118 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Uncial Antiqua', cursive;
+  background-color: #2c1b12;
+  background-image: radial-gradient(#3b2318 1px, transparent 1px);
+  background-size: 4px 4px;
+  color: #3b1f0e;
+  padding: 40px;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 40px;
+  background: #f4e2c9;
+  border-radius: 8px;
+  box-shadow:
+    0 0 0 8px #5a3825,
+    0 15px 40px rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #5a3825;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #5a2e0f;
+}
+
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7b3f00;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #a0522d;
+}
+
+
+h2 {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  color: #5a2e0f;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+ul, ol {
+  margin: 15px 0 20px 40px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+
+section {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+
+article {
+  flex: 2;
+  padding: 20px;
+  background: rgba(255, 248, 220, 0.6);
+  border: 2px solid #8b5a2b;
+  border-radius: 6px;
+}
+
+
+aside {
+  flex: 1;
+  padding: 20px;
+  background: rgba(255, 248, 220, 0.6);
+  border: 2px dashed #8b5a2b;
+  border-radius: 6px;
+}
+
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  border-top: 3px solid #5a3825;
+  padding-top: 20px;
+  font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+}
